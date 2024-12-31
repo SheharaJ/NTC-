@@ -36,14 +36,13 @@ connectDB(); // Ensure this function connects to MongoDB correctly
 app.use('/ntc/admin', adminRoutes); // Admin-related routes
 
 app.use('/ntc/admin/bus', busRoutes); // For bus management
-app.use('/ntc/admin/bus-operators', busOperatorRoutes); // Bus operator-related routes
+app.use('/ntc/admin/busOperators', busOperatorRoutes); // Bus operator-related routes
 app.use('/ntc/commuters', commuterRoutes); // Commuter-related routes
 app.use('/ntc/admin/routes', routeRoutes); // For routes management
 app.use('/ntc/admin/schedules', scheduleRoutes); // For schedules management
-app.use('/ntc/admin/buses', busRoutes); // For bus management
 app.use('/ntc/admin/permits', permitRoutes); // Permit routes
-app.use('/ntc/bus-operators/auth', busOperatorAuthRoutes);
-app.use('/ntc/bus-operators/actions', busOperatorActionsRoutes); // Operator-specific actions
+app.use('/ntc/bus-operators/authentication', busOperatorAuthRoutes);
+app.use('/ntc/bus-operators/action/', busOperatorActionsRoutes); // Operator-specific actions
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJsDoc));
 
 
