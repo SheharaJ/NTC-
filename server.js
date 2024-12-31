@@ -9,7 +9,7 @@ const swaggerJsDoc = require('./swaggerOptions'); // Importing SwaggerOptions.js
 
 
 const adminRoutes = require('./src/routes/adminRoutes'); // Adjust path if needed
-const busRoutes = require('./src/routes/BusRoutes'); // Adjust path if needed
+const busRoutes = require('./src/routes/busRoutes'); // Adjust path if needed
 const busOperatorRoutes = require('./src/routes/BusOperatorRoutes');
 const commuterRoutes = require('./src/routes/commuterRoutes'); // Updated path
 const routeRoutes = require('./src/routes/routeRoutes');
